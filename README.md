@@ -72,6 +72,11 @@ Add this lines to /etc/default/grub:
 	
 	(Show Total of snapshots found during run "grub-mkconfig")
 
+* GRUB_BTRFS_IGNORE_SPECIFIC_PATH=("var/lib/docker" "nosapshot")
+
+	(Ignore specific path during run "grub-mkconfig")
+
+
 
 
 Generate grub.cfg (on Archlinux use grub-mkconfig -o /boot/grub/grub.cfg )
@@ -84,7 +89,6 @@ You will see it appear differents entries (e.g : Snapshot: [2014-02-12 11:24:37]
 #### TO DO
 
 * Display name of microcode in menuentry when available
-* ignore specific path
 
 
 ## discussion
