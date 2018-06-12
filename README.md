@@ -23,6 +23,12 @@ Simple rollback using snapshots you made previously.
 
 * Automatically detect snapper and use snapper's snapshot description if available.
 ##
+### Setup:
+ * Arch Linux : [grub-btrfs](https://aur.archlinux.org/packages/grub-btrfs/) or [grub-btrfs-git](https://aur.archlinux.org/packages/grub-btrfs-git/).
+ * Manual setup
+   * Copy `41_snapshots-btrfs` into `/etc/grub.d/`
+   * Copy `41_snapshots-btrfs_config` into `/etc/grub.d/`
+##
 ### How to customize it:
 
 You have the possibility to modify many parameters.
